@@ -27,10 +27,10 @@
   align-items:center;
 }
 
-.SideBarList #active {
-  background-color: rgb(88, 3, 122);
+#active {
+  background-color: rgb(156, 7, 214);
 }
 .SideBarList:hover{
-  background-color: rgb(88, 3, 122);
+  background-color: rgb(156, 7, 214);
   cursor: pointer;
 }

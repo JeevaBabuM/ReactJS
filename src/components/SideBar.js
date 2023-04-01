@@ -11,9 +11,9 @@ function SideBar(){
                         return(
                         <li 
                         key={key}
-                        id={ window.location.pathname == value.link ? "active" : "" }
+                        id={window.location.pathname === value.link ? "active" : ""}
                         className="SideBarList"
-                        onClick={() => {window.location.pathname = value.link }}> 
+                        onClick={() => {window.location.pathname = value.link}}> 
                             <div> {value.title} </div>
                         </li>)
                     })
