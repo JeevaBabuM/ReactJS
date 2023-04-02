@@ -8,12 +8,12 @@
 .main-content{
   width: 100%;
   height: 100%;
-  color: brown;
+  color: darkcyan;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  /* align-items: center; */
+  /* align-content: center; */
 }
 
 .SideNav{
@@ -27,6 +27,7 @@
   padding: 0;
   width: 100%;
 }
+
 
 .SideNavList{
   width: 100%;
@@ -46,4 +47,19 @@
 .SideNavList:hover{
   background-color: rgb(104, 4, 144);
   cursor: pointer;
+}
+
+nav{
+  margin: 10px;
+  background-color: rgb(156, 7, 214);
+  padding: 16px 32px;
+  height: 20px;
+  display: flex;
+}
+
+nav a{
+  margin-right: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
