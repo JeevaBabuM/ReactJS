@@ -1,18 +1,14 @@
-export const SideBarData = [
+export const SideNavData = [
     {
         title : 'Home',
-        link : '/home'
     },
     {
         title : 'Applications',
-        link : '/applications'
     },
     {
         title : 'DashBoard',
-        link : '/dashboard'
     },
     {
         title : 'About',
-        link : '/about'
     },
 ]

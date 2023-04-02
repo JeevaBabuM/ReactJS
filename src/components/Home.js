@@ -1,11 +1,7 @@
 import React from "react";
 
 function Home() {
-    return (
-        <>
-            'Welcome to Homepage'
-        </>
-    )
+    return (<h1> Welcome to Home section of this webpage </h1>)
 }
 
 export default Home
