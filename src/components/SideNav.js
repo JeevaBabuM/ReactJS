@@ -15,7 +15,8 @@ function SideNav(){
                         key={key}
                         id={window.location.pathname === '/' + value.title ? "active" : ""}
                         className="SideNavList"
-                        onClick={() => {navigate(value.title)}}> 
+                        onClick={() => {navigate(value.title)}}
+                        > 
                             <div> {value.title} </div>
                         </li>)
                     })

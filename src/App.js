@@ -5,12 +5,14 @@ import Applications from './components/Applications'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
 import { Routes,Route } from 'react-router';
+import Calculator from './components/Applications/Calculator';
 
 function App() {
   return (
     <>
       <div className="App">
-        <SideNav/>
+        <Calculator />
+        {/* <SideNav/>
         <div className='main-content'>
           <Routes>
             <Route path='/Home' element={ <Home /> }/>
@@ -18,7 +20,7 @@ function App() {
             <Route path='/About' element={ <About /> }/>
             <Route path='/Dashboard' element={ <Dashboard /> }/>
           </Routes>
-        </div>
+        </div> */}
       </div>
     </>
   );
