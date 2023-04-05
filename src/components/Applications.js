@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Calculator from "./Applications/Calculator";
+import { Link, Outlet } from "react-router-dom";
 
 function Applications() {
     return (
-        <nav>
-            <Link> Calculator </Link>
-            <Link> BMI Calculator </Link>
-            <Link> To do List </Link>                        
-        </nav>
+        <>
+            <div>
+                <nav>
+                    <Link to='calculator'> Calculator </Link>
+                    <Link> App 2 </Link>
+                    <Link> App 3 </Link>                        
+                </nav>
+                <div>
+                    <Outlet />
+                </div>
+            </div>
+        </>
     )
 }
 

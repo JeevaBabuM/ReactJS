@@ -11,16 +11,17 @@ function App() {
   return (
     <>
       <div className="App">
-        <Calculator />
-        {/* <SideNav/>
+        <SideNav/>
         <div className='main-content'>
           <Routes>
-            <Route path='/Home' element={ <Home /> }/>
-            <Route path='/Applications' element={ <Applications /> }/>
-            <Route path='/About' element={ <About /> }/>
-            <Route path='/Dashboard' element={ <Dashboard /> }/>
+            <Route path='home' element={ <Home /> }/>
+            <Route path='applications' element={ <Applications /> }> 
+              <Route path='calculator' element={ <Calculator /> }/>            
+            </Route>
+            <Route path='about' element={ <About /> }/>
+            <Route path='dashboard' element={ <Dashboard /> }/>
           </Routes>
-        </div> */}
+        </div>
       </div>
     </>
   );

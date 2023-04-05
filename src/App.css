@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  background-color: #eee;
 }
 
 .main-content{
@@ -10,10 +10,7 @@
   height: 100%;
   color: darkcyan;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
-  /* align-content: center; */
 }
 
 .SideNav{
@@ -27,7 +24,6 @@
   padding: 0;
   width: 100%;
 }
-
 
 .SideNavList{
   width: 100%;
@@ -51,9 +47,10 @@
 
 nav{
   margin: 10px;
+  width:auto;
   background-color: rgb(156, 7, 214);
   padding: 16px 32px;
-  height: 20px;
+  /* height: 20px; */
   display: flex;
 }
 
@@ -62,4 +59,58 @@ nav a{
   color: white;
   font-weight: bold;
   text-decoration: none;
+}
+
+.calc {
+  width: 50vh;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.result{
+  padding: 16px;
+  background-color: rgb(41, 38, 38);
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.result span{
+  font-size: 14px;
+  padding: 3px;
+  color: #888;
+}
+
+button{
+  color: whitesmoke;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 16px;
+}
+
+button:hover{
+  opacity: 0.9;
+} 
+.operators{
+  display: flex;
+}
+.operators button{
+  flex: 1 1 ;
+  background-color: orange;
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.digits button{
+  background-color: rgb(41, 38, 38);
+  flex: 1 1 33.333% ;
+  max-width: 33.333%;
 }
