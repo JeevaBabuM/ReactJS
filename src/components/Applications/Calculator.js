@@ -53,7 +53,7 @@ function Calculator() {
                 </div>
 
                 <div className="digits">
-                    {CreateDigits()}
+                    { CreateDigits() }
                     <button onClick={ () => PrintResult('0')} > 0 </button>
                     <button onClick={ () => PrintResult('.')}> . </button>
                     <button onClick={ () => FinalValue()}> = </button>

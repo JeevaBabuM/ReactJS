@@ -7,7 +7,7 @@ function Applications() {
             <div>
                 <nav>
                     <Link to='calculator'> Calculator </Link>
-                    <Link> App 2 </Link>
+                    <Link to='calcreducer' > Calculator - Reducer </Link>
                     <Link> App 3 </Link>                        
                 </nav>
                 <div>

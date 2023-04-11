@@ -6,6 +6,7 @@ import About from './components/About'
 import Dashboard from './components/Dashboard'
 import { Routes,Route } from 'react-router';
 import Calculator from './components/Applications/Calculator';
+import CalcReducer from './components/Applications/CalcReducer';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Routes>
             <Route path='home' element={ <Home /> }/>
             <Route path='applications' element={ <Applications /> }> 
-              <Route path='calculator' element={ <Calculator /> }/>            
+              <Route path='calculator' element={ <Calculator /> }/> 
+              <Route path='calcreducer' element={ <CalcReducer /> } />
             </Route>
             <Route path='about' element={ <About /> }/>
             <Route path='dashboard' element={ <Dashboard /> }/>
