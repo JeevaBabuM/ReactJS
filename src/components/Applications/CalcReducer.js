@@ -5,9 +5,8 @@ function CalcReducer() {
     const reducer = (state,action) =>{
         switch(action){
             case 'Add':
-                return state+1
-        }
-    }
+                return eval(state)
+        }}
 
     const [value, setValue] = useState('')
     const [result, dispatch] = useReducer(reducer,value)
