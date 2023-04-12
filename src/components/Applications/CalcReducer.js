@@ -5,16 +5,40 @@ function CalcReducer() {
     const reducer = (state,action) =>{
         switch(action){
             case 'Add':
-                return eval(state)
-        }}
+                return eval(value)
+            case 'Sub':
+                alert('dispatch subtract')
+                return eval(value)
+            case 'Clear':
+                return ''
+            default:
+                return value
+        }
+    }
 
+    const FindOperator = () => {
+        if(value.includes('+')){
+            alert('add')
+            return dispatch('Add')
+        } else if (value.includes('-')) {
+            alert('Sub')
+            return dispatch('Sub')
+        }
+    }
     const [value, setValue] = useState('')
     const [result, dispatch] = useReducer(reducer,value)
 
     const DisplayResult = newValue =>{
+        if(value.includes('+','-') && (newValue === '+' || newValue === '-' )){
+            return
+        } 
         setValue( value + newValue)
     }
 
+    const ClearValues = () => {
+        setValue('')
+        dispatch('Clear')
+    }
     const CreateDigits = () => {
         const digits = []
         for(let i =1;i<10;i++) {
@@ -37,9 +61,9 @@ function CalcReducer() {
                 </div>
 
                 <div className="operators">
-                    <button onClick={() => setValue('') } > C </button>
+                    <button onClick={() => ClearValues() } > C </button>
                     <button onClick={ () => DisplayResult('+') } > + </button>
-                    <button onClick={ '' } > - </button>
+                    <button onClick={ () => DisplayResult('-') } > - </button>
                     <button onClick={ '' } > * </button>
                     <button onClick={ '' } > / </button>
                 </div>
@@ -48,7 +72,7 @@ function CalcReducer() {
                     { CreateDigits() }
                     <button onClick={ () => DisplayResult(0) } > 0 </button>
                     <button onClick={ () => {DisplayResult('.')} }> . </button>
-                    <button onClick={ () => dispatch('Add') }> = </button>
+                    <button onClick={ () => FindOperator() }> = </button>
                 </div>
             </div>
         </div>
