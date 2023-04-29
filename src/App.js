@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard'
 import { Routes,Route } from 'react-router';
 import Calculator from './components/Applications/Calculator';
 import CalcReducer from './components/Applications/CalcReducer';
+import Weather from './components/Applications/Weather';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='applications' element={ <Applications /> }> 
               <Route path='calculator' element={ <Calculator /> }/> 
               <Route path='calcreducer' element={ <CalcReducer /> } />
+              <Route path='weather' element={ <Weather /> } />
             </Route>
             <Route path='about' element={ <About /> }/>
             <Route path='dashboard' element={ <Dashboard /> }/>
