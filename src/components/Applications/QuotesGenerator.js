@@ -1,26 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './QuotesGenerator.css'
 import axios from "axios";
 
-function QuotesGenerator() {
+export default function QuotesGenerator() {
+    // const url = "https://jsonplaceholder.typicode.com/posts/1";
     const url = "https://api.quotable.io/random";
     const [quote, setQuote] = useState('')
 
-    axios.get("https://api.quotable.io/random")
-    .then(res => {  
-      const apiResponse = res.data;  
-      setQuote({ apiResponse });  
-    })  
+    useEffect(() => {
+        axios.get(url)
+        .then(res => {
+        setQuote(res.data);  
+    })},[])
+
     const getNewQuote = () => {
-        alert('apiResponse')
+        axios.get(url)
+        .then(res => {
+        setQuote(res.data);})
     }
+
     return (
         <div className="quotesContent">
             <div className="quoteText">
-                <p> quote </ p>
+                <p> Quote of the day : {quote.content} </ p>
             </div>
             <div className="quoteAuthor">
-                <p> author Name </ p>
+                <p> Author : {quote.author} </ p>
             </div>
             
             <button className="quoteButton" onClick={getNewQuote}>New Quote</button>
@@ -28,5 +33,3 @@ function QuotesGenerator() {
         </ div>
     )
 }
-
-export default QuotesGenerator
