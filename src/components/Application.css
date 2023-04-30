@@ -1,0 +1,25 @@
+.appHeaders {
+    width: 100%;
+    padding: 16px 16px;
+    height: auto;
+}
+.appContent {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    width: auto;
+    background-color: rgb(156, 7, 214);
+    padding: 10px 10px;
+}
+
+nav a {
+    margin: 16px;
+    padding: 5px 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

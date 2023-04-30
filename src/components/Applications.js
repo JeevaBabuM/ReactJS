@@ -1,18 +1,19 @@
 import React from "react";
+import './Application.css'
 import { Link, Outlet } from "react-router-dom";
 
 function Applications() {
     return (
         <>
-            <div>
+            <div className="appHeaders">
                 <nav>
                     <Link to='calculator'> Calculator </Link>
                     <Link to='calcreducer' > Calculator - Reducer </Link>
-                    <Link to='Weather' > Weather </Link>                        
+                    <Link to='quotesgenerator' > Quotes Generator </Link>                        
                 </nav>
-                <div>
-                    <Outlet />
-                </div>
+            </div>
+            <div className="appContent">
+                <Outlet />
             </div>
         </>
     )

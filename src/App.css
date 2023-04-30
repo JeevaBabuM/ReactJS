@@ -5,112 +5,12 @@
   background-color: #eee;
 }
 
-.main-content{
+.main-content {
   width: 100%;
   height: 100%;
   color: black;
-  display: flex;
   justify-content: center;
-}
-
-.SideNav{
-  width: 200px;
-  height: 100vh;
-  background-color: rgb(156, 7, 214);
-}
-
-.SideNavContainer{
-  height: auto;
-  padding: 0;
-  width: 100%;
-}
-
-.SideNavList{
-  width: 100%;
-  height: 60px;
-  list-style-type: none;
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
   justify-content: center;
-  align-items:center;
-}
-
-#active {
-  background-color: rgb(104, 4, 144);
-}
-.SideNavList:hover{
-  background-color: rgb(104, 4, 144);
-  cursor: pointer;
-}
-
-nav{
-  margin: 10px;
-  width:auto;
-  background-color: rgb(156, 7, 214);
-  padding: 16px 32px;
-  /* height: 20px; */
-  display: flex;
-}
-
-nav a{
-  margin-right: 16px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.calc {
-  width: 50vh;
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
-.result{
-  padding: 16px;
-  background-color: rgb(41, 38, 38);
-  text-align: right;
-  color: white;
-  font-size: 24px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.result span{
-  font-size: 14px;
-  padding: 3px;
-  color: #888;
-}
-
-button{
-  color: whitesmoke;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 16px;
-}
-
-button:hover{
-  opacity: 0.9;
-} 
-.operators{
-  display: flex;
-}
-.operators button{
-  flex: 1 1 ;
-  background-color: orange;
-}
-
-.digits{
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-}
-
-.digits button{
-  background-color: rgb(41, 38, 38);
-  flex: 1 1 33.333% ;
-  max-width: 33.333%;
+  align-items: center;
 }

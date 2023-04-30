@@ -4,26 +4,28 @@ import Home from './components/Home'
 import Applications from './components/Applications'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
-import { Routes,Route } from 'react-router';
+import { Routes, Route } from 'react-router';
 import Calculator from './components/Applications/Calculator';
 import CalcReducer from './components/Applications/CalcReducer';
-import Weather from './components/Applications/Weather';
+import QuotesGenerator from './components/Applications/QuotesGenerator';
 
 function App() {
   return (
     <>
       <div className="App">
-        <SideNav/>
+        <SideNav />
         <div className='main-content'>
           <Routes>
-            <Route path='home' element={ <Home /> }/>
-            <Route path='applications' element={ <Applications /> }> 
-              <Route path='calculator' element={ <Calculator /> }/> 
-              <Route path='calcreducer' element={ <CalcReducer /> } />
-              <Route path='weather' element={ <Weather /> } />
+            <Route path='home' element={<Home />} />
+
+            <Route path='applications' element={<Applications />}>
+              <Route path='calculator' element={<Calculator />} />
+              <Route path='calcreducer' element={<CalcReducer />} />
+              <Route path='quotesgenerator' element={ <QuotesGenerator />} />
             </Route>
-            <Route path='about' element={ <About /> }/>
-            <Route path='dashboard' element={ <Dashboard /> }/>
+            
+            <Route path='about' element={<About />} />
+            <Route path='dashboard' element={<Dashboard />} />
           </Routes>
         </div>
       </div>
