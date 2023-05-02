@@ -9,7 +9,8 @@ function Applications() {
                 <nav>
                     <Link to='calculator'> Calculator </Link>
                     <Link to='calcreducer' > Calculator - Reducer </Link>
-                    <Link to='quotesgenerator' > Quotes Generator </Link>                        
+                    <Link to='quotesgenerator' > Quotes Generator </Link>  
+                    <Link to='universities' > Universities List </Link>                      
                 </nav>
             </div>
             <div className="appContent">
