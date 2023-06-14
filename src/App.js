@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router';
 import Calculator from './components/Applications/Calculator';
 import CalcReducer from './components/Applications/CalcReducer';
 import QuotesGenerator from './components/Applications/QuotesGenerator';
-import Universities from './components/Applications/universities';
+import UsersList from './components/Applications/UsersList';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
               <Route path='calculator' element={<Calculator />} />
               <Route path='calcreducer' element={<CalcReducer />} />
               <Route path='quotesgenerator' element={ <QuotesGenerator />} />
-              <Route path='universities' element={ <Universities />} />
+              <Route path='users' element={ <UsersList /> } />
             </Route>
             
             <Route path='about' element={<About />} />

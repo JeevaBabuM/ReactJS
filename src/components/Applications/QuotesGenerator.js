@@ -17,8 +17,10 @@ export default function QuotesGenerator() {
         axios.get(url)
         .then(res => {
         setQuote(res.data);})
+        console.log('Feteched after button click')
     }
 
+    console.log('rendered')
     return (
         <div className="quotesContent">
             <div className="quoteText">
